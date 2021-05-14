@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import "variables";
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-image: url(../media/ban.png);
+    background-repeat: no-repeat;
+    background-size: 66.6rem;
+    width: 66.6em;
+    font-size: 18px;
+}
+header {
+    display: flex;
+    width: 66.6rem;
+    height: 22.2rem;
+    background-color: transparent;
+    nav {
+        line-height: 3.88rem;
+        float: none;
+        margin: auto;
+        a {
+            color: #035556;
+            display: inline-block;
+            font-family: Caveat;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 1.11rem 0.55rem;
+            line-height: normal;
+            font-size: 2rem;
+            -webkit-transition: all 500ms ease;
+            transition: all 500ms ease;
+            background-color: #5E888D;
+            border-radius: 0.55rem 5.55rem 0.55rem 5.55rem;
+            &:hover {
+                padding: 0em 0.27rem;
+                text-decoration: none;
+                color: #18D4B3;
+                border-bottom: 0.27rem solid #18D4B3;
+                border-top: 0.27rem solid #18D4B3;
+                background-color: transparent;
+            }
+        }
+    }
+}
+main {
+    max-width: 66.66em;
+    min-width: 19.44em;
+    margin: 0 auto;
+    margin-top: 12em;
+    padding: 2rem;
+    background-color: transparent;
+    font-size: 1rem;
+    font-family: Righteous;
+    color: black;
+}
+footer {
+    ;
+    display: flex;
+    flex-direction: row;
+    margin: 0.31em;
+    padding: 2rem;
+    bottom: 0;
+    width: 66.6rem;
+    height: 25em;
+    background-color: white;
+    color: #181B8C;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    h2 {
+        color: black;
+        font-size: 2em;
+    }
+}
+/*clases*/
+
+.menuHeader {
+    background-color: transparent;
+    overflow: hidden;
+    width: $ancho;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.menuInicio {
+    width: 66.66rem;
+    margin: auto;
+    padding: 0px;
+    overflow: hidden;
+}
+.logotipo {
+    color: black;
+    font-size: 2.77rem;
+    font-family: Righteous;
+    line-height: 3.88rem;
+    float: left;
+}
+.logotipodos {
+    margin: 0px;
+    left: 0px;
+}
+.social-bar {
+    position: fixed;
+    right: 0;
+    top: 35%;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 100;
+}
+.icon {
+    color: white;
+    text-decoration: none;
+    padding: .7em;
+    display: flex;
+    transition: all .5s;
+}
+.icon-facebook {
+    background-color: #2E406E;
+}
+.icon-whatsapp {
+    background-color: green;
+}
+.icon-instagram {
+    background-color: #CB682C
+}
+.icon:first-child {
+    border-radius: 1rem 0 0 0;
+}
+.icon:last-child {
+    border-radius: 0 0 0 1rem;
+}
+.icon:hover {
+    padding-right: 3rem;
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
+}
+.boxMedidaEspecial {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    height: 16.6rem;
+    width: 47.22rem;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: Orelega;
+    padding-top: 3rem;
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.7rem;
+    }
+    h4 {
+        font-size: 1.5rem;
+    }
+}
+.segundaMedidaEspecial {
+    width: 66.66rem;
+    height: 22.22rem;
+}
+.slidmed {
+    width: 30rem;
+}
+@media (max-width: 1440px) {
+    body {
+        font-size: 16px;
+        width: 1440px;
+        background-size: 85rem;
+        footer {
+            width: 85rem;
+        }
+    }
+}
+/*desktop*/
+
+@media (max-width: 1200px) {
+    body {
+        font-size: 16px;
+        width: 1200px;
+    }
+}
+/*notes*/
+
+@media (max-width: 992px) {
+    body {
+        font-size: 15px;
+        width: 992px;
+        footer {
+            padding-top: 10px;
+        }
+    }
+}
+/*ipad*/
+
+@media (max-width: 768px) {
+    body {
+        font-size: 12px;
+    }
+}
+/*celus*/
+
+@media (max-width: 576px) {
+    body {
+        font-size: 10px;
+    }
+}
