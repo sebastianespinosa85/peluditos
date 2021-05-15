@@ -5,6 +5,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  list-style-type: none;
 }
 
 body {
@@ -346,4 +347,23 @@ footer h2 {
   margin: auto;
   width: 80%;
   float: right;
+}
+
+.nosotrosSize {
+  margin: 10%;
+  list-style-type: none;
+}
+
+.nosotrosSize li {
+  padding: 7%;
+}
+
+.nosotrosSize2 {
+  margin: 6%;
+  list-style-type: none;
+}
+
+.nosotrosSize2 li {
+  font-size: 85%;
+  padding: 5%;
 }

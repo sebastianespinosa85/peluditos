@@ -6,6 +6,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    list-style-type: none;
 }
 body {
     margin: auto;
@@ -317,4 +318,19 @@ footer {
     margin: auto;
     width: 80%;
     float: right;
+}
+.nosotrosSize {
+    margin: 10%;
+    list-style-type: none;
+    li {
+        padding: 7%;
+    }
+}
+.nosotrosSize2 {
+    margin: 6%;
+    list-style-type: none;
+    li {
+        font-size: 85%;
+        padding: 5%;
+    }
 }
