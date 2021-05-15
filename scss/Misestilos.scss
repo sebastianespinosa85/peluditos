@@ -8,21 +8,25 @@
     padding: 0px;
 }
 body {
+    margin: auto;
     background-image: url(../media/ban.png);
     background-repeat: no-repeat;
-    background-size: 66.6rem;
+    background-size: $ancho;
     width: 66.6em;
     font-size: 18px;
+    padding-top: 2%;
 }
 header {
     display: flex;
-    width: 66.6rem;
+    width: 100%;
     height: 22.2rem;
     background-color: transparent;
     nav {
+        position: sticky;
+        justify-content: left;
+        width: 20%;
         line-height: 3.88rem;
-        float: none;
-        margin: auto;
+        align-items: left;
         a {
             color: #035556;
             display: inline-block;
@@ -34,14 +38,12 @@ header {
             font-size: 2rem;
             -webkit-transition: all 500ms ease;
             transition: all 500ms ease;
-            background-color: #5E888D;
-            border-radius: 0.55rem 5.55rem 0.55rem 5.55rem;
+            background-color: transparent;
             &:hover {
                 padding: 0em 0.27rem;
                 text-decoration: none;
                 color: #18D4B3;
                 border-bottom: 0.27rem solid #18D4B3;
-                border-top: 0.27rem solid #18D4B3;
                 background-color: transparent;
             }
         }
@@ -50,8 +52,8 @@ header {
 main {
     max-width: 66.66em;
     min-width: 19.44em;
-    margin: 0 auto;
-    margin-top: 12em;
+    margin: auto;
+    margin-top: 2em;
     padding: 2rem;
     background-color: transparent;
     font-size: 1rem;
@@ -59,24 +61,22 @@ main {
     color: black;
 }
 footer {
-    ;
     display: flex;
     flex-direction: row;
     margin: 0.31em;
-    padding: 2rem;
     bottom: 0;
-    width: 66.6rem;
-    height: 25em;
-    background-color: white;
+    width: $ancho;
+    height: 12em;
+    background-color: #c0d8d3;
     color: #181B8C;
     align-content: center;
     justify-content: center;
     text-align: center;
     font-size: 16px;
     color: white;
+    align-items: center;
     h2 {
         color: black;
-        font-size: 2em;
     }
 }
 /*clases*/
@@ -90,21 +90,30 @@ footer {
     z-index: 100;
 }
 .menuInicio {
-    width: 66.66rem;
+    width: 100%;
     margin: auto;
     padding: 0px;
     overflow: hidden;
 }
 .logotipo {
+    margin: auto;
+    align-items: center;
     color: black;
     font-size: 2.77rem;
     font-family: Righteous;
     line-height: 3.88rem;
-    float: left;
+    width: 20%;
 }
 .logotipodos {
     margin: 0px;
     left: 0px;
+}
+.navBar {
+    justify-content: left;
+    width: 80%;
+}
+.navBar .navBarHijo {
+    width: 20%;
 }
 .social-bar {
     position: fixed;
@@ -146,10 +155,10 @@ footer {
 .boxMedidaEspecial {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    height: 16.6rem;
-    width: 47.22rem;
-    font-size: 1rem;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
     font-weight: bold;
     font-family: Orelega;
     padding-top: 3rem;
@@ -164,36 +173,60 @@ footer {
     }
 }
 .segundaMedidaEspecial {
-    width: 66.66rem;
+    width: $ancho;
     height: 22.22rem;
 }
 .slidmed {
-    width: 30rem;
+    width: $ancho/2;
 }
-@media (max-width: 1440px) {
+.meddiv1 {
+    width: 50%;
+    padding-bottom: 1rem;
+}
+@media (max-width: 2560px) {
     body {
         font-size: 16px;
-        width: 1440px;
-        background-size: 85rem;
-        footer {
-            width: 85rem;
+        width: $ancho;
+        background-size: $ancho;
+        header {
+            nav {
+                a {
+                    font-size: 4.2rem
+                }
+            }
         }
+        footer {
+            width: $ancho;
+        }
+    }
+    .container {
+        padding-top: 5rem;
     }
 }
 /*desktop*/
 
-@media (max-width: 1200px) {
+@media (max-width: 1440px) {
     body {
         font-size: 16px;
-        width: 1200px;
+        width: $ancho;
+    }
+    .container {
+        padding-top: 5rem;
     }
 }
 /*notes*/
 
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
     body {
         font-size: 15px;
-        width: 992px;
+        width: $ancho;
+        header {
+            nav {
+                a {
+                    font-size: 3rem;
+                }
+            }
+        }
         footer {
             padding-top: 10px;
         }
@@ -205,11 +238,43 @@ footer {
     body {
         font-size: 12px;
     }
+    .boxMedidaEspecial {
+        font-size: 70%;
+    }
 }
 /*celus*/
 
 @media (max-width: 576px) {
     body {
         font-size: 10px;
+        main {
+            width: $ancho;
+        }
+        .boxMedidaEspecial {
+            font-size: 50%;
+        }
+        .container {
+            display: none;
+        }
+    }
+}
+@media (max-width: 400px) {
+    body {
+        width: $ancho;
+        background-size: 100%;
+        font-size: auto;
+        main {
+            width: $ancho;
+        }
+        .boxMedidaEspecial {
+            font-size: 50%;
+        }
+        .container {
+            display: none;
+        }
+        footer {
+            padding: 0px;
+            margin: auto;
+        }
     }
 }
