@@ -25,6 +25,14 @@ header {
   background-color: transparent;
 }
 
+header ul {
+  font-size: 2rem;
+}
+
+header ul li {
+  font-size: 2rem;
+}
+
 header nav {
   position: sticky;
   justify-content: left;
@@ -244,14 +252,16 @@ footer h2 {
   }
 }
 
-/*notes*/
 @media (max-width: 1024px) {
   body {
-    font-size: 15px;
+    font-size: 13px;
     width: 100%;
   }
   body header nav a {
-    font-size: 3rem;
+    font-size: 1.4rem;
+  }
+  body header nav a li {
+    font-size: 1.4rem;
   }
   body footer {
     padding-top: 10px;
