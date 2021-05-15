@@ -382,6 +382,7 @@ footer h2 {
   display: inline-block;
   position: relative;
   width: 100%;
+  font-size: 1rem;
 }
 
 .div-imagen > div {
